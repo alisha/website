@@ -1,0 +1,28 @@
+doctype
+html
+  head
+    link(rel="stylesheet" href="/main.css")
+
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+
+    script(type="text/javascript" src="responsive.js")
+  body
+    div(id="wrap")
+      ul(class="navbar")
+        li
+          a(href="/" id="name") Alisha Ukani
+        li
+          a(href="bio.html" id="bio") Biology
+        li(class="dropdown")
+          a(href="cs.html" id="cs") Computer Science
+          ul
+            li
+              a(href="cs.html" id="overview") Overview
+            li
+              a(href="projects.html" id="projects") Projects
+            li
+              a(href="events.html" id="events") Events
+        li
+          a(href="orgs.html" id="orgs") Organizations
+
+    != yield
