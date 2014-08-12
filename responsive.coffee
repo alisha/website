@@ -7,5 +7,3 @@ $(document).ready ->
     $('#bio').text('Bio')
     $('#cs').text('CS')
     $('#orgs').text('Orgs')
-
-  console.log('hi')
