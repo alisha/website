@@ -1,107 +1,66 @@
-@maroon: #AB0000;
+@highlight: #961706;
 
-body{
-  font-family: "Helvetica";
-  text-align: center;
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,200);
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400!important;
   padding: 0px;
-  background: #f4f4f7;
-  color: #444;
   margin: 0;
 }
 
-h1{
-  font-size: 65px;
-  line-height: 1.2em;
-  border-bottom: #CCC solid 1px;
-  padding: 20px 0;
-  color: #3D513D;
-}
-
-h3{
-  font-weight: 300;
-}
-
-p{
-  font-size: 20px;
-}
-
-a{
-  color: #74907C;
-}
-
-#content{
+#content {
   width: 50%;
-  padding: 0% 25% 0% 25%;
   box-sizing: inherit;
 }
 
-/* Navbar */
-#wrap{
-  width: 100%;
-  height: 50px;
-  margin: 0;
-  z-index: 99;
-  position: relative;
+h1 {
+  color: @highlight;
+  font-weight: 200;
+  font-size: 230%;
 }
 
-.navbar{
-  height: 50px;
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  border-top: 2px solid #3D513D;
-  border-bottom: 2px solid #3D513D;
-  background-color: #74907C;
-}
-
-.navbar li{
-  height: auto;
-  width: 25%;
-  float: left;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navbar a{
-  height: 15px;
-  padding: 18px 0;
+a:link, a:visited {
+  color: @highlight;
   text-decoration: none;
-  display: block;
-  color: white;
 }
 
-.navbar li:hover, .navbar li a:hover{
-  background-color: #3D513D;
+/* Navigation */
+#nav-col {
+  background-color: #CCC8C8;
+  font-weight: 200;
+
+  #nav, h1, #nav #cs-nav {
+    list-style-type: none;
+    padding-left: 8%;
+  }
+
+  #nav {
+    li {
+      margin-bottom: 5%;
+
+      a {
+        font-size: 130%;
+      }
+    }
+
+    #cs-nav li {
+      margin-bottom: 0%;
+    }
+  }
+
+  h1 a {
+    color: black;
+  }
 }
 
-.navbar li ul{
-  display: none;
-  height: auto;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
+/* From ungrid (github.com/chrisnager/ungrid) */
+@media (min-width: 30em) {
+  .row {
+    width: 100%; display: table; table-layout: fixed; 
+  }
 
-.navbar li:hover ul{
-  display: block;
-}
-
-.navbar li ul li{
-  background-color: #74907C;
-  width: 100%;
-}
-
-button{
-  background-color: #3D513D;
-  color: white;
-  border: 1px solid #3D513D;
-  padding: 5px;
-  font-size: 17px;
-}
-
-.classes{
-  list-style-position: inside;
-  padding: 0;
+  .col {
+    display: table-cell;
+  }
 }
