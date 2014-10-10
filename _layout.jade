@@ -2,12 +2,14 @@ doctype
 html
   head
     link(rel="stylesheet" href="/main.css")
+    link(rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
 
     script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
 
     script(type="text/javascript" src="responsive.js")
 
     title Alisha Ukani
+    
   body
     div(class="row")
       div(class="col" style="width:18%" id="nav-col")
@@ -26,29 +28,8 @@ html
           li
             a(href="orgs.html") Organizations
       div(class="col" style="width:2%")
-      //
-        div(id="wrap")
-          ul(class="navbar")
-            li(class="dropdown")
-              a(href="/" id="name") Alisha Ukani
-              ul
-                li
-                  a(href="/") Home
-                li
-                  a(href="about.html") About Me
-            li
-              a(href="bio.html" id="bio") Biology
-            li(class="dropdown")
-              a(href="cs.html" id="cs") Computer Science
-              ul
-                li
-                  a(href="cs.html" id="overview") Overview
-                li
-                  a(href="projects.html" id="projects") Projects
-                li
-                  a(href="events.html" id="events") Events
-            li
-              a(href="orgs.html" id="orgs") Organizations
+
+      div(class="col" style="width:45%")
+        != yield
 
       div(class="col")
-        != yield

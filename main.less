@@ -1,23 +1,25 @@
-@highlight: #961706;
+@highlight: #BF0000;
 
-@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,200);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400|Oxygen:400);
 
-body {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400!important;
-  padding: 0px;
+html, body, .row, .col {
+  height: 100%;
   margin: 0;
 }
 
-#content {
-  width: 50%;
-  box-sizing: inherit;
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0px;
 }
 
 h1 {
   color: @highlight;
-  font-weight: 200;
   font-size: 230%;
+}
+
+h1, h2, #nav-col a {
+  font-family: "Oxygen", sans-serif;
+  line-height: 140%;
 }
 
 a:link, a:visited {
@@ -25,10 +27,19 @@ a:link, a:visited {
   text-decoration: none;
 }
 
+#icons a {
+  color: black;
+}
+
+i.fa.icon {
+  font-size: 300%;
+  margin-right: 5%;
+}
+
 /* Navigation */
 #nav-col {
-  background-color: #CCC8C8;
-  font-weight: 200;
+  border-right: solid;
+  border-color: #4C4B4B;
 
   #nav, h1, #nav #cs-nav {
     list-style-type: none;
