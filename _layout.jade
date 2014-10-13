@@ -3,33 +3,53 @@ html
   head
     link(rel="stylesheet" href="/main.css")
     link(rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
+    link(rel="stylesheet" href="/ink/css/ink.css")
 
     script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
-
-    script(type="text/javascript" src="responsive.js")
+    script(src="ink-all.min.js")
 
     title Alisha Ukani
     
   body
-    div(class="row")
-      div(class="col" style="width:18%" id="nav-col")
-        h1
-          a(href="/") Alisha Ukani
-        ul(id="nav")
-          li
-            a(href="bio.html") Biology
-          li
-            a(href="cs.html") Computer Science
-            ul(id="cs-nav")
-              li
-                a(href="projects.html") Projects
-              li
-                a(href="events.html") Events
-          li
-            a(href="orgs.html") Organizations
-      div(class="col" style="width:2%")
+    
+    div(class="ink-grid")
+      div(class="column-group horizontal-gutters")
 
-      div(class="col" style="width:45%")
-        != yield
+        div(class="tiny-100 small-100 medium-20 large-20 xlarge-20" id="navbar")
+          nav(class="ink-navigation")
+            ul(class="menu vertical white")
+              li(class="heading")
+                a(href="/") Alisha Ukani
+              li
+                a(href="bio.html") Bio
+              li
+                a(href="cs.html") CS
+                ul(class="submenu")
+                  li
+                    a(href="projects.html") Projects
+                  li
+                    a(href="events.html") Events
+              li
+                a(href="orgs.html") Orgs
 
-      div(class="col")
+        div(class="tiny-100 small-100 medium-80 large-40 xlarge-40")
+          != yield
+
+    //
+      div(class="row")
+        div(class="col" style="width:18%" id="nav-col")
+          h1
+            a(href="/") Alisha Ukani
+          ul(id="nav")
+            li
+              a(href="bio.html") Biology
+            li
+              a(href="cs.html") Computer Science
+              ul(id="cs-nav")
+                li
+                  a(href="projects.html") Projects
+                li
+                  a(href="events.html") Events
+            li
+              a(href="orgs.html") Organizations
+        div(class="col" style="width:2%")

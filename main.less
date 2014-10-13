@@ -1,15 +1,13 @@
 @highlight: #BF0000;
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400|Oxygen:400);
-
-html, body, .row, .col {
+html, body, div .ink-grid, div .column-group, div #navbar {
   height: 100%;
   margin: 0;
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
   padding: 0px;
+  padding-top: 2%;
 }
 
 h1 {
@@ -17,18 +15,23 @@ h1 {
   font-size: 230%;
 }
 
-h1, h2, #nav-col a {
-  font-family: "Oxygen", sans-serif;
-  line-height: 140%;
-}
-
 a:link, a:visited {
   color: @highlight;
   text-decoration: none;
 }
 
-#icons a {
-  color: black;
+a:hover {
+  border-bottom: 1px @highlight dotted;
+}
+
+#icons {
+  a {
+    color: black;
+  }
+
+  a:hover {
+    border-bottom: none;
+  }
 }
 
 i.fa.icon {
@@ -36,42 +39,11 @@ i.fa.icon {
   margin-right: 5%;
 }
 
-/* Navigation */
-#nav-col {
-  border-right: solid;
-  border-color: #4C4B4B;
-
-  #nav, h1, #nav #cs-nav {
-    list-style-type: none;
-    padding-left: 8%;
-  }
-
-  #nav {
-    li {
-      margin-bottom: 5%;
-
-      a {
-        font-size: 130%;
-      }
-    }
-
-    #cs-nav li {
-      margin-bottom: 0%;
-    }
-  }
-
-  h1 a {
-    color: black;
-  }
+div #navbar {
+  padding-right: 1%;
 }
 
-/* From ungrid (github.com/chrisnager/ungrid) */
-@media (min-width: 30em) {
-  .row {
-    width: 100%; display: table; table-layout: fixed; 
-  }
-
-  .col {
-    display: table-cell;
-  }
+li .heading a {
+  font-weight: 700;
+  color: @highlight;
 }
