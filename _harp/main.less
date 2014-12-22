@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Arimo);
 
 @highlight: #BD2609;
+@border: rgb(200, 200, 200);
 
 #bucket {
   margin: 2.5% 0 2.5% 0;
@@ -41,10 +42,20 @@ a:visited {
 
 nav {
   background-color: transparent!important;
-  border-color: transparent!important;
-  border: none!important;
   background-image: none!important;
+
+  box-shadow: none!important;
+  border-bottom: 1px solid @border!important;
+  border-top: transparent!important;
+  border-left: transparent!important;
+  border-right: transparent!important;
+  border-radius: 0px!important;
+
   margin: 10px 0 10px 0!important;
+}
+
+.navbar-nav li a {
+  padding-bottom: 5px!important;
 }
 
 .container-narrow {

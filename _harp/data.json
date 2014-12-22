@@ -1,0 +1,18 @@
+{
+    "index": {
+        "layout": "_layout",
+        "title": "Alisha Ukani"
+    },
+    "cs": {
+        "layout": "_layout",
+        "title": "Alisha Ukani | Computer Science"
+    },
+    "projects": {
+        "layout": "_layout",
+        "title": "Alisha Ukani | Projects"
+    },
+    "gpa": {
+        "layout": false,
+        "title": "GPA Calculator"
+    }
+}
